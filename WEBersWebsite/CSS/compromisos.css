@@ -1,0 +1,248 @@
+body {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    background-image: url(../IMG/5583949.jpg);
+}
+main{
+    margin: 0;
+}
+header{
+    position: fixed;
+    width: 100%;
+    left: 0%;
+    top: 0%;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 2px solid black;
+    box-shadow: 0.5px 1px 3px black;
+    z-index: 100;
+}
+nav{
+    text-align: center;
+    padding-left: 0;
+}
+#WEB{
+    position: fixed;
+    width: 100px;
+    top: 0;
+    left: 14%;
+}
+#WEB:hover{
+    position: fixed;
+    width: 105px;
+    transition: 0.2s;
+    top: 0;
+    left: 14%;
+}
+.secciones{
+    text-decoration: none; 
+    color: rgb(71, 123, 157);  
+    cursor: pointer;
+    transition: 0.2s;
+    text-align: center; 
+    display: inline;
+    list-style: none;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.secciones:hover{
+    color: rgb(28, 53, 86);
+    border-bottom: 1px solid rgb(28, 53, 86);
+}
+#btncontacto{
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(71, 123, 157);
+    padding: 13px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+#btncontacto:hover{
+    color: #000;
+    padding: 15px;
+    background-color: rgb(230, 57, 71);
+}
+
+h1 {
+    text-align: center;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    text-transform: uppercase;
+    color: #1C3556;
+    margin-top: -13%;
+}
+
+#imgEncabezado {
+    width: 100%;
+    height: 55%;
+}
+
+.carta {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+    display: inline-block;
+    margin-left: 7%;
+}
+
+.carta .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.carta .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.carta .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carta .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0,0,0,.4);
+    text-align: center;
+}
+
+.carta .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: #E63947;
+    padding: 5px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+
+.carta .back .link {
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+
+.carta .back .link a {
+    color: #f3f3f3;
+}
+
+.carta .back h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.carta .back p {
+    letter-spacing: 0px;
+    font-size: 130%;
+} 
+
+.carta:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.carta:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+/*parte 1*/
+#titulos {
+    text-align: center;
+
+}
+
+h2 {
+    font-size: 120%;
+    color: white;
+}
+
+article:hover{
+    opacity:1;
+    transition: all 0.5s linear;
+}
+
+.descripcion{
+    font-size: 0;
+    transition: margin-top 0.4s;
+}
+.descripcion:hover{
+    transform: scale(0);
+    opacity: 1;
+    font-size: 100%;
+
+}
+
+.ir-arriba {
+	display: none;
+	background-repeat: no-repeat;
+	font-size: 20px;
+	color: black;
+	cursor: pointer;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	z-index: 2;
+}
+
+footer {
+    background-color: #477B9D;
+    color: white;
+    list-style-type: none;
+    padding: 2%;
+    font-family: 'Prompt', sans-serif;
+}
+
+#soporte{
+    float: right;
+    margin-top: -22%;
+    margin-right: 5%;
+    padding: 2%;
+}
+
+h3{
+    color: #1C3556;
+    font-weight: bold;
+}
+
+.documentos{
+    color: #fff;
+    display: table-row-group;
+    padding: 2%;
+    list-style: none;
+    text-transform: none;
+}
+
+#info{
+    width: 30%;
+    margin-left: 5%;
+}
+
+#iconos{
+    margin-left: 42%;   
+}
+
+.redes{
+    width: 5%;
+    padding: 1%;
+}
+  
+#copy{
+    text-align: center;
+    color: #E63947;
+    font-weight: bold;
+    font-size: 110%;
+}

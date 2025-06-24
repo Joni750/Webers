@@ -1,0 +1,85 @@
+body{
+    font-family: 'Prompt', sans-serif;
+    font-size: 120%;
+}
+#imgNaro {
+    width: 40%;
+    float: left;
+    animation: rebote 3s ;
+}
+#atras{
+    width: 3.5%;
+    float: left;
+}
+@keyframes rebote {
+        
+      20%, 40%, 60%, 80% {
+        transform: translateY(0px);
+      } 
+      
+      30% {
+        transform: translateY(-150px);
+      } 
+      
+      50% {
+        transform: translateY(-100px);
+      } 
+      
+      70% {
+        transform: translateY(-40px);
+      } 
+      
+      90% {
+        transform: translateY(-20px);
+      } 
+}
+
+#nombre {
+    text-align: center;
+    font-size: xxx-large;
+    padding-top: 4%;
+}
+
+body {
+    background-image: url('../IMG/5583949.jpg');
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    margin-right: 4%;
+}
+#boton {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    background: rgb(28, 53, 86);
+    font-family: 'Prompt', sans-serif;
+}
+
+#boton:hover {
+    background: rgb(230, 57, 71);
+    color: #000;
+}
+
+li {
+    list-style: none;
+    text-align: center;
+}
+
+h1 {
+    color: rgb(230, 57, 71);
+}
+
+#segColor {
+    color: rgb(28, 53, 86);
+}
+
+h2 {
+    color: rgb(71, 123, 157);
+}

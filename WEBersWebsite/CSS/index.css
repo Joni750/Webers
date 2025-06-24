@@ -1,0 +1,174 @@
+body{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    background-image: url(../IMG/5583949.jpg);
+}
+main{
+    margin: 0;
+}
+header{
+    position: fixed;
+    width: 100%;
+    left: 0%;
+    top: 0%;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 2px solid black;
+    box-shadow: 0.5px 1px 3px black;
+}
+nav{
+    text-align: center;
+    padding-left: 0;
+}
+#WEB{
+    position: fixed;
+    width: 100px;
+    top: 0;
+    left: 14%;
+}
+#WEB:hover{
+    position: fixed;
+    width: 105px;
+    transition: 0.2s;
+    top: 0;
+    left: 14%;
+}
+.secciones{
+    text-decoration: none; 
+    color: rgb(71, 123, 157);  
+    cursor: pointer;
+    transition: 0.2s;
+    text-align: center; 
+    display: inline;
+    list-style: none;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.secciones:hover{
+    color: rgb(28, 53, 86);
+    border-bottom: 1px solid rgb(28, 53, 86);
+}
+#btncontacto{
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(71, 123, 157);
+    padding: 13px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+#btncontacto:hover{
+    color: #000;
+    padding: 15px;
+    background-color: rgb(230, 57, 71);
+}
+.slider{
+    width: 100% ;
+    margin: auto;
+    overflow: hidden;
+    background-color: rgb(230, 57, 71);
+}
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: cambio 15s infinite alternate;
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+.slider img{
+    width: 100%;
+}
+@keyframes cambio {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+#contenido{
+    margin: 1% 20%;
+    text-align: justify;
+    padding: 5%;
+}
+#radio1, #radio2, #radio3{
+    display: grid;
+}
+.ir-arriba {
+	display: none;
+	background-repeat: no-repeat;
+	font-size: 20px;
+	color: rgb(28, 53, 86);
+	cursor: pointer;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	z-index: 2;
+}
+h1{
+    font-size: 150%;
+}
+span{
+    color: #E63947;
+}
+.Inicio{
+    color: #1C3556;
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+#nintendo{
+    width: 100%;
+    margin-top: 3%;
+    border-radius: 30px;
+    box-shadow: 0.5px 1px 3px black;
+}
+footer {
+    background-color: #477B9D;
+    color: white;
+    list-style-type: none;
+    padding: 2%;
+    font-family: 'Prompt', sans-serif;
+}
+#soporte{
+    float: right;
+    margin-top: -22%;
+    margin-right: 5%;
+    padding: 2%;
+}
+h3{
+    color: #1C3556;
+    font-weight: bold;
+}
+.documentos{
+    color: #fff;
+    display: table-row-group;
+    padding: 2%;
+    list-style: none;
+    text-transform: none;
+}
+#info{
+    width: 30%;
+    margin-left: 5%;
+}
+#iconos{
+    margin-left: 42%;   
+}
+.redes{
+    width: 5%;
+    padding: 1%;
+} 
+#copy{
+    text-align: center;
+    color: #E63947;
+    font-weight: bold;
+    font-size: 110%;
+}

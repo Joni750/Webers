@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>WEBers</title>
+    <link rel="icon" href="IMG/Mesa de trabajo 1.png" type="image/png" />
+    <link rel="stylesheet" href="CSS/sobreNosotros.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Prompt:wght@200&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="webers.html"><img id="WEB" src="IMG/Mesa de trabajo 1.png" alt="webers" /></a>
+            <a class="secciones" href="inicio.html">Inicio</a>
+            <a class="secciones" href="compromisos.html">Compromisos</a>
+            <a class="secciones" href="sobreNosotros.html">Sobre Nosotros</a>
+            <a id="btncontacto" href="contacto.html" target="_blank">Contacto</a></label>
+        </nav>
+    </header>
+
+    <a class="ir-arriba" javascript:void(0) title="Volver arriba">
+        <span class="fa-stack">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i>
+        </span>
+    </a>
+
+    <main>
+        <section>
+
+            <h1 id="titulo1">Nuestro Equipo </h1>
+           
+            <section id="imagenes">
+
+                <article class="cajas">
+                    <img id="imgJon" src="IMG/Jon.png">
+                    <p class="texto">
+                        <a href="JON.html">
+                            <button class="botoncio" type="button">JON<br> SANTOLARIA</button></a>
+                    </p>
+
+                </article>
+
+                <article class="cajas">
+                    <img id="imgJorge" src="IMG/Rod.png">
+                    <p class="texto">
+                        <a href="JORGE.html">
+                            <button class="botoncio" type="button">JORGE<br> FERNANDES</button></a>
+                    </p>
+
+                </article>
+
+                <article class="cajas">
+                    <img id="imgNaroa" src="IMG/Naroa.png">
+                    <p class="texto">
+                        <a href="NAROA.html">
+                            <button class="botoncio" type="button">NAROA<br> JUÁREZ</button></p>
+                </article></a>
+
+                <article class="cajas">
+                    <img id="imgRod" src="IMG/Jorge.png">
+                    <a href="ROD.html">
+                        <p class="texto"> <button class="botoncio" type="button">RODRIGO<br>
+                                VILLANUEVA</button></p>
+                    </a>
+
+                </article>
+
+                <article class="cajas">
+                    <img id="imgUnai" src="IMG/Unai.png">
+                    <a href="UNAI.html">
+                        <p class="texto"> <button class="botoncio" type="button">UNAI<br>
+                                GONZÁLEZ</button></p>
+                    </a>
+                </article>
+
+            </section>
+
+
+
+            <section id="misionVision">
+
+                <figure>
+                    <img id="equipo" src="IMG/equipo.jpeg">
+                </figure>
+
+                <article id="mision">
+                    <h2 id="titMision">Visión</h2>
+                    <p>WEBers nace como una herramienta para <span>ayudar</span> a emprendedores a tener presencia en
+                        Internet.
+                        Vivimos en una era en donde la presencia online es esencial para tener <span>éxito</span>. Por
+                        este medio se
+                        logran ventas, exposición, informar e incluso se puede tener un trato con el cliente que vaya
+                        más allá de la venta. Nosotros <span>podemos ayudar</span> a estos negocios a tener un medio por
+                        el cual
+                        lograr esto. Por lo que tenemos como compromiso con cada uno de nuestros clientes la
+                        <span>puntualidad, creatividad y asertividad</span>, cosas que consideramos de gran importancia
+                        para que toda
+                        sociedad sea fructífera y nuestra misión es <span>''Programámos para ayudar''</span>.</p>
+
+                </article>
+
+
+
+
+                <article id="visionSub">
+                    <h2 id="Vision">Misión</h2>
+
+                    <ul id="listaVision"> 
+                        <p>La misión de WEBers se puede resumir en los siguientes aspectos:</p>
+
+                        <li class="objetivosLi">Trabajamos para cumplir los objetivos del cliente.</li>
+                        <li class="objetivosLi">Trabajar con transparencia.</li>
+                        <li class="objetivosLi"> Favorecemos el trabajo en equipo y la responsabilidad.</li>
+                        <li class="objetivosLi">Creemos que nuestra mejor ventaja son los compañeros increíbles.</li>
+
+                        <p><span>Tenemos como meta dentro de 7 años ser la primera opción de soluciones web en Bilbao.</span></p>
+                    </ul>
+
+                </article>
+            </section>
+        </section>
+    </main>
+
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+<script languaje="javascript" type="text/javascript">
+    $(document).ready(function () {
+      irArriba();
+    }); //Hacia arriba
+  
+    function irArriba() {
+      $(".ir-arriba").click(function () {
+        $("body,html").animate({
+          scrollTop: "0px"
+        }, 1000);
+      });
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 0) {
+          $(".ir-arriba").slideDown(600);
+        } else {
+          $(".ir-arriba").slideUp(600);
+        }
+      });
+      $(".ir-abajo").click(function () {
+        $("body,html").animate({
+          scrollTop: "1000px"
+        }, 1000);
+      });
+    }
+  </script>
+
+
+<footer>
+    <section id="info">
+        <h3>Información</h3>
+        <p><img src="IMG/mapa.png"> Licenciado Poza Kalea 31, 48011 Bilbao, Vizcaya</p>
+        <p><img src="IMG/email.png"> company.webers@gmail.com</p>
+        <p><img src="IMG/telefono.png"> 944395062</p>
+    </section>
+
+    <figure id="iconos">
+        <a href="https://www.instagram.com/company.webers/"><img class="redes" src="IMG/instagram.png"></a>
+        <a href="https://www.facebook.com/profile.php?id=100087233841085"><img class="redes" src="IMG/facebook.png"></a>
+        <a href="https://www.linkedin.com/in/webers-company-b68955255/"><img class="redes" src="IMG/linkedin.png"></a>
+        <a href="https://www.youtube.com/channel/UCL1pM_CnyNGwVlXzDUZIP6w"><img class="redes" src="IMG/youtube.png"></a>
+    </figure>
+
+    <section id="soporte">
+        <h3>Soporte</h3>
+        <a class="documentos" href="docs/Aviso legal.pdf">Aviso legal</a><br>
+        <a class="documentos" href="docs/ALCANCE DE LA POLÍTICA Y.pdf">Política de Privacidad</a><br>
+        <a class="documentos" href="docs/Política de privacidad.pdf">Cookies</a>
+    </section>
+
+    <p id="copy">© 2022 Webers</p>
+</footer>
+
+</html>

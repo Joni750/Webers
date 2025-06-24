@@ -1,0 +1,103 @@
+body{
+    background-color: #D8D9CA;
+}
+.imgJon{
+    position: absolute;
+    left: 57.14%;
+    right: 21.96%;
+    top: 27.35%;
+    bottom: 33.54%;
+}
+.imgNaroa{
+    position: absolute;
+    left: 21.43%;
+    right: 57.67%;
+    top: 27.45%;
+    bottom: 33.54%;
+}
+.imgJorge{
+    position: absolute;
+    left: 76.12%;
+    right: 2.98%;
+    top: 26.93%;
+    bottom: 33.95%;
+}
+.imgRod{
+    position: absolute;
+    left: 39.55%;
+    right: 39.55%;
+    top: 27.45%;
+    bottom: 33.44%;
+}
+.imgUnai{
+    position: absolute;
+    left: 2.45%;
+    right: 76.65%;
+    top: 27.45%;
+    bottom: 33.54%;
+}
+
+h1{
+    font-size: 3.5em;
+    color: #899500;
+}
+
+.imgUnai img, .imgJon img, .imgJorge img, .imgNaroa img, .imgRod img{
+    width: 316px;
+    height: 379px;
+}
+#nombres{
+    color: white;
+    text-align: center;
+}
+.Jon{
+    position: absolute;
+left: 59.92%;
+right: 23.88%;
+top: 63.16%;
+bottom: 26.93%;
+background-color: #5D5E1E;
+}
+.Jorg{
+    position: absolute;
+left: 42%;
+right: 41.8%;
+top: 63.16%;
+bottom: 26.93%;
+background-color: #5D5E1E;
+}
+.Naro{
+    position: absolute;
+left: 24.01%;
+right: 59.79%;
+top: 63.16%;
+bottom: 26.93%;
+background-color: #5D5E1E;
+}
+.Unai{
+    position: absolute;
+    left: 5.95%;
+    right: 77.84%;
+    top: 63.16%;
+    bottom: 26.93%;
+    background-color: #5D5E1E;
+}
+.Rod{
+    position: absolute;
+    left: 78.04%;
+    right: 5.75%;
+    top: 63.16%;
+    bottom: 26.93%;
+    background-color: #5D5E1E;
+    }
+.menorque{
+    position: absolute;
+left: 88.49%;
+right: 9.54%;
+top: 92.78%;
+bottom: 3.15%;
+}
+.menorque img{
+    width: 29.77px;
+    height: 39.5px ;
+}

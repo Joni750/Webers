@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>webers</title>
+    <link rel="icon" type="img/ico" href="IMG/icon_azul.ico" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="inicio.html"><img id="WEB" src="IMG/Mesa de trabajo 1.png" alt="webers" /></a>
+            <a class="secciones" href="inicio.html">Inicio</a>
+            <a class="secciones" href="compromisos.html">Compromisos</a>
+            <a class="secciones" href="sobreNosotros.html">Sobre Nosotros</a>
+            <a id="btncontacto" href="contacto.html" target="_blank">Contacto</a></label>
+        </nav>
+    </header>
+
+    <a class="ir-arriba" javascript:void(0) title="Volver arriba">
+        <span class="fa-stack">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i>
+        </span>
+      </a>
+
+    <main>
+        <section class="slider">
+            <ul class="slides">
+                <li><img src="IMG/html1.jpg"></li>
+                <li><img src="IMG/html2.jpg"></li>
+                <li><img src="IMG/html3.jpg"></li>
+                <li><img src="IMG/html4.jpg"></li>
+            </ul>
+        </section>
+        <section id="contenido">
+
+            <article class="Inicio">
+              <h1><span>¿Q</span>ué hacemos<span>?</span></h1>
+              <p>
+                  WEBers se dedica a proporcionar soluciones web a todo tipo de cliente que quiera llevar su negocio
+                  a otro nivel y empezar a tener presencia online.
+                  <img id="nintendo" src="IMG/Untitled3.jpg">
+              </p>
+            </article>
+        </section>
+    </main>
+
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+<script languaje="javascript" type="text/javascript">
+    $(document).ready(function () {
+      irArriba();
+    }); //Hacia arriba
+  
+    function irArriba() {
+      $(".ir-arriba").click(function () {
+        $("body,html").animate({
+          scrollTop: "0px"
+        }, 1000);
+      });
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 0) {
+          $(".ir-arriba").slideDown(600);
+        } else {
+          $(".ir-arriba").slideUp(600);
+        }
+      });
+      $(".ir-abajo").click(function () {
+        $("body,html").animate({
+          scrollTop: "1000px"
+        }, 1000);
+      });
+    }
+  </script>
+
+<footer>
+    <section id="info">
+        <h3>Información</h3>
+        <p><img src="IMG/mapa.png"> Licenciado Poza Kalea 31, 48011 Bilbao, Vizcaya</p>
+        <p><img src="IMG/email.png"> company.webers@gmail.com</p>
+        <p><img src="IMG/telefono.png"> 944395062</p>
+    </section>
+
+    <figure id="iconos">
+        <a href="https://www.instagram.com/company.webers/"><img class="redes" src="IMG/instagram.png"></a>
+        <a href="https://www.facebook.com/profile.php?id=100087233841085"><img class="redes" src="IMG/facebook.png"></a>
+        <a href="https://www.linkedin.com/in/webers-company-b68955255/"><img class="redes" src="IMG/linkedin.png"></a>
+        <a href="https://www.youtube.com/channel/UCL1pM_CnyNGwVlXzDUZIP6w"><img class="redes" src="IMG/youtube.png"></a>
+    </figure>
+
+    <section id="soporte">
+        <h3>Soporte</h3>
+        <a class="documentos" href="docs/Aviso legal.pdf">Aviso legal</a><br>
+        <a class="documentos" href="docs/ALCANCE DE LA POLÍTICA Y.pdf">Política de Privacidad</a><br>
+        <a class="documentos" href="docs/Política de privacidad.pdf">Cookies</a>
+    </section>
+
+    <p id="copy">© 2022 Webers</p>
+</footer>
+
+</html>
